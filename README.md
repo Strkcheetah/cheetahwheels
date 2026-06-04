@@ -1,1 +1,0 @@
-# HWBM Base\nUsuario: admin\nPassword: admin123
