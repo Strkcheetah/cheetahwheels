@@ -1,0 +1,4 @@
+body{background:#0d0d0d;color:#fff;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+.login-card{background:#171717;padding:30px;border-radius:16px;width:340px}
+input,button{width:100%;padding:12px;margin-top:10px;box-sizing:border-box}
+button{background:#00BFFF;border:none;color:white;cursor:pointer}
