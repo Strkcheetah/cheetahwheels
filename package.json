@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"><title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div class="layout">
+<div class="sidebar">
+<h2>HWBM</h2>
+<button onclick="show('clientes')">Clientes</button>
+<button onclick="show('inventario')">Inventario</button>
+</div>
+<div class="content">
+<h1>Dashboard</h1>
+<div id="clientes" class="panel">
+<h2>Clientes</h2>
+<input id="cnombre" placeholder="Nombre">
+<input id="ctel" placeholder="Teléfono">
+<input id="cciudad" placeholder="Ciudad">
+<button onclick="guardarCliente()">Guardar Cliente</button>
+<ul id="listaClientes"></ul>
+</div>
+<div id="inventario" class="panel" style="display:none">
+<h2>Inventario</h2>
+<input id="pnombre" placeholder="Producto">
+<input id="pmarca" placeholder="Marca">
+<input id="pstock" placeholder="Stock">
+<input id="pcosto" placeholder="Costo">
+<input id="pprecio" placeholder="Precio">
+<button onclick="guardarProducto()">Guardar Producto</button>
+<ul id="listaProductos"></ul>
+</div>
+</div></div>
+<script src="js/dashboard.js"></script>
+</body></html>

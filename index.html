@@ -1,0 +1,26 @@
+
+function show(id){
+document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
+document.getElementById(id).style.display='block';
+}
+function guardarCliente(){
+let arr=JSON.parse(localStorage.getItem('clientes')||'[]');
+arr.push({nombre:cnombre.value,tel:ctel.value,ciudad:cciudad.value});
+localStorage.setItem('clientes',JSON.stringify(arr));
+renderClientes();
+}
+function renderClientes(){
+let arr=JSON.parse(localStorage.getItem('clientes')||'[]');
+listaClientes.innerHTML=arr.map(x=>`<li>${x.nombre} - ${x.tel}</li>`).join('');
+}
+function guardarProducto(){
+let arr=JSON.parse(localStorage.getItem('productos')||'[]');
+arr.push({nombre:pnombre.value,marca:pmarca.value,stock:pstock.value});
+localStorage.setItem('productos',JSON.stringify(arr));
+renderProductos();
+}
+function renderProductos(){
+let arr=JSON.parse(localStorage.getItem('productos')||'[]');
+listaProductos.innerHTML=arr.map(x=>`<li>${x.nombre} (${x.stock})</li>`).join('');
+}
+renderClientes();renderProductos();

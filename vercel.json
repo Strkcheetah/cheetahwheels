@@ -1,0 +1,12 @@
+<!DOCTYPE html><html><head>
+<meta charset="UTF-8"><title>Login</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div class="card">
+<h1>CheetahWheels Manager</h1>
+<input id="user" placeholder="Usuario">
+<input id="pass" type="password" placeholder="Contraseña">
+<button onclick="login()">Ingresar</button>
+<p id="msg"></p>
+</div>
+<script src="js/login.js"></script>
+</body></html>
